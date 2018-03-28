@@ -2,6 +2,7 @@
 //  ViewController.swift
 //  Swift Fun
 //
+// Hello there
 //  Created by Maddie Hoppert on 2/26/18.
 //  Copyright © 2018 Maddie Hoppert. All rights reserved.
 //
