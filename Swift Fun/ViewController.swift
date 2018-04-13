@@ -11,13 +11,24 @@ import UIKit
 
 class ViewController: UIViewController {
    
-    var buttonCount = 0
-    
+//    var buttonCount = 0
     
     @IBOutlet weak var Mylabel: UILabel!
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
+    
+    
     
     @IBAction func Buttontapped(_ sender: Any) {
+   
+        let sum = Double(topTextField.text!)!  + Double(bottomTextField.text!)!
         
+        Mylabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)" 
+
+        
+        
+        
+    /* Comment now, not code.
         buttonCount += 1
         
         print(buttonCount)
@@ -37,7 +48,8 @@ class ViewController: UIViewController {
             
             
         }
-        
+        */
+
         
         
         

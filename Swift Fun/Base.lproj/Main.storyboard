@@ -31,18 +31,42 @@
                                     <action selector="Buttontapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jq4-fi-7Q3"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="im1-bL-nO1">
+                                <rect key="frame" x="137.5" y="285" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zQp-8Y-Xif"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-9M-Uno">
+                                <rect key="frame" x="137.5" y="205" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Oi3-zQ-JFF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="m5v-2H-LQi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qv4-0p-xeE"/>
+                            <constraint firstItem="0SC-9M-Uno" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RP9-94-PB1"/>
                             <constraint firstItem="gb8-n8-cmz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Woe-wj-dKt"/>
+                            <constraint firstItem="im1-bL-nO1" firstAttribute="top" secondItem="0SC-9M-Uno" secondAttribute="bottom" constant="50" id="fgq-h5-9NF"/>
+                            <constraint firstItem="m5v-2H-LQi" firstAttribute="top" secondItem="im1-bL-nO1" secondAttribute="bottom" constant="8" id="p1S-8T-3zc"/>
                             <constraint firstItem="gb8-n8-cmz" firstAttribute="top" secondItem="m5v-2H-LQi" secondAttribute="bottom" constant="10" id="sHW-1X-hhR"/>
+                            <constraint firstItem="im1-bL-nO1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sfR-T3-1RJ"/>
                             <constraint firstItem="m5v-2H-LQi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tTb-US-Qqk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Mylabel" destination="m5v-2H-LQi" id="EfD-BL-fCB"/>
+                        <outlet property="bottomTextField" destination="im1-bL-nO1" id="os2-mz-T9V"/>
+                        <outlet property="topTextField" destination="0SC-9M-Uno" id="dqd-Fr-aHH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
